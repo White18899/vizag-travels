@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Vizag Travels - Premium Tours and Travels in Visakhapatnam. Explore Araku Valley, beaches, temples, and coastal adventures. Owned by Rapeti Matshya Mukesh.">
+  <title>Vizag Travels | Premium Tours & Travels in Visakhapatnam</title>
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Custom Cursor Elements -->
+  <div class="custom-cursor"></div>
+  <div class="custom-cursor-dot"></div>
+
+  <!-- Dynamic Animated Intro Splash Screen Loader -->
+  <div id="intro-loader">
+    <div class="loader-content">
+      <div class="loader-logo">
+        <svg width="120" height="120" viewBox="0 0 100 100" class="dynamic-logo loader-logo-svg">
+          <!-- Outer Ring -->
+          <circle cx="50" cy="50" r="42" class="logo-ring" stroke="var(--secondary)" stroke-width="5" fill="none" />
+          <!-- Inner Ticks -->
+          <circle cx="50" cy="50" r="34" class="logo-ticks" stroke="rgba(255,255,255,0.15)" stroke-width="1.5" stroke-dasharray="4,6" fill="none" />
+          <!-- Needle -->
+          <g class="logo-needle">
+            <polygon points="50,18 57,50 50,45" fill="var(--accent)" />
+            <polygon points="50,18 43,50 50,45" fill="var(--accent)" style="opacity: 0.8;" />
+            <polygon points="50,82 57,50 50,55" fill="var(--secondary)" />
+            <polygon points="50,82 43,50 50,55" fill="var(--secondary)" style="opacity: 0.8;" />
+            <circle cx="50" cy="50" r="4" fill="var(--primary)" stroke="var(--text-light)" stroke-width="2" />
+          </g>
+        </svg>
+      </div>
+      <h1 class="loader-title">Vizag<span>Travels</span></h1>
+      <div class="loader-line-wrap">
+        <div class="loader-line"></div>
+      </div>
+      <p class="loader-subtitle">Founded by Rapeti Matshya Mukesh</p>
+    </div>
+  </div>
+
+  <!-- Header & Navigation -->
+  <header>
+    <div class="container nav-container">
+      <div class="nav-logo">
+        <a href="#home">
+          <h1>
+            <svg width="38" height="38" viewBox="0 0 100 100" class="dynamic-logo header-logo-svg">
+              <!-- Outer Ring -->
+              <circle cx="50" cy="50" r="42" class="logo-ring" stroke="var(--secondary)" stroke-width="5" fill="none" />
+              <!-- Ticks -->
+              <circle cx="50" cy="50" r="34" class="logo-ticks" stroke="var(--primary-light)" stroke-width="1.5" stroke-dasharray="4,6" fill="none" />
+              <!-- Needle -->
+              <g class="logo-needle">
+                <polygon points="50,18 57,50 50,45" fill="var(--accent)" />
+                <polygon points="50,18 43,50 50,45" fill="var(--accent)" style="opacity: 0.8;" />
+                <polygon points="50,82 57,50 50,55" fill="var(--secondary)" />
+                <polygon points="50,82 43,50 50,55" fill="var(--secondary)" style="opacity: 0.8;" />
+                <circle cx="50" cy="50" r="4" fill="var(--primary)" stroke="var(--text-light)" stroke-width="2" />
+              </g>
+            </svg>
+            Vizag<span>Travels</span>
+          </h1>
+        </a>
+      </div>
+      
+      <!-- Mobile Toggle -->
+      <div class="menu-toggle" id="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#packages">Packages</a></li>
+        <li><a href="#fleet">Fleet</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#cinematic-reel">Video Reel</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+        <li><a href="#booking" class="nav-btn">Book Now</a></li>
+      </ul>
+    </div>
+    <!-- Top progress scroll indicator -->
+    <div class="scroll-progress"></div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-bg-container">
+      <div class="hero-slide active" style="background-image: url('assets/hero-1.jpg');"></div>
+      <div class="hero-slide" style="background-image: url('assets/hero-2.jpg');"></div>
+      <div class="hero-slide" style="background-image: url('assets/hero-3.jpg');"></div>
+    </div>
+    <div class="hero-overlay"></div>
+    
+    <div class="container hero-content">
+      <div class="reveal">
+        <div class="hero-badge">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="feather feather-award"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          Visakhapatnam's Premier Tour Agency
+        </div>
+        <h2>Explore The Jewel of The<br><span>East Coast</span></h2>
+        <p>Embark on tailor-made journeys through Vizag's golden beaches, misty hills of Araku Valley, ancient heritage, and breathtaking views.</p>
+        <div class="hero-cta-group">
+          <a href="#packages" class="btn-primary">
+            Explore Packages
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+          <a href="#booking" class="btn-secondary">Plan Custom Trip</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll Down mouse animation -->
+    <a href="#about" class="scroll-down">
+      <span>Scroll</span>
+      <div class="mouse">
+        <div class="wheel"></div>
+      </div>
+    </a>
+
+    <!-- Floating Search Bar -->
+    <div class="hero-search-container reveal">
+      <form class="search-bar" id="searchForm">
+        <div class="search-item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin" style="color: var(--secondary);"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          <div class="search-item-inner">
+            <label for="searchDest">Destination</label>
+            <select id="searchDest">
+              <option value="">Select Location</option>
+              <option value="pkg-1">Araku Valley (Hills)</option>
+              <option value="pkg-2">Vizag Beaches (Coastal)</option>
+              <option value="pkg-3">Simhachalam (Spiritual)</option>
+              <option value="pkg-4">Rushikonda (Adventure)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="search-item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar" style="color: var(--secondary);"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="3" y2="10"></line></svg>
+          <div class="search-item-inner">
+            <label for="searchDate">Date</label>
+            <input type="date" id="searchDate">
+          </div>
+        </div>
+
+        <div class="search-item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-compass" style="color: var(--secondary);"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg>
+          <div class="search-item-inner">
+            <label for="searchType">Tour Type</label>
+            <select id="searchType">
+              <option value="">Any Category</option>
+              <option value="hills">Hill Retreats</option>
+              <option value="beaches">Beach Escapes</option>
+              <option value="spiritual">Spiritual Tours</option>
+              <option value="adventure">Adventures</option>
+            </select>
+          </div>
+        </div>
+
+        <button type="submit" class="search-btn" aria-label="Search Packages">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section class="about section-padding" id="about">
+    <div class="container">
+      <div class="grid-2">
+        <div class="about-img-wrap reveal-left">
+          <img src="assets/about.jpg" alt="Beautiful Beach in Visakhapatnam" class="about-img" loading="lazy">
+          <div class="about-experience-badge">
+            <span>8+</span>
+            Years of<br>Journeys
+          </div>
+        </div>
+        
+        <div class="about-content reveal-right">
+          <span class="sub-title">Who We Are</span>
+          <h2 class="section-title">Your Gateway to Visakhapatnam's Wonders</h2>
+          <p>Vizag Travels is a locally rooted, premium tour service dedicated to unveiling the natural splendor, heritage, and hidden treasures of the City of Destiny. From the sun-kissed sands of Rushikonda to the serene, coffee-laden valleys of Araku, we design trips that stick with you forever.</p>
+          <p>Our fleet of vehicles, handpicked local guides, and custom itineraries guarantee comfort and security while letting you explore at your own pace.</p>
+          
+          <!-- Owner profile details -->
+          <div class="owner-profile">
+            <div class="owner-avatar">
+              RMM
+            </div>
+            <div class="owner-info">
+              <h4>Rapeti Matshya Mukesh</h4>
+              <p>Founder & Managing Director, Vizag Travels</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Destination Packages Section -->
+  <section class="packages section-padding" id="packages">
+    <div class="container">
+      <div class="section-title-wrap text-center reveal">
+        <span class="sub-title">Our Packages</span>
+        <h2 class="section-title">Curated Experiences For Every Traveler</h2>
+      </div>
+
+      <!-- Categories filter -->
+      <div class="package-filters reveal">
+        <button class="filter-btn active" data-filter="all">All Packages</button>
+        <button class="filter-btn" data-filter="beaches">Beaches</button>
+        <button class="filter-btn" data-filter="hills">Araku Hills</button>
+        <button class="filter-btn" data-filter="spiritual">Spiritual</button>
+        <button class="filter-btn" data-filter="adventure">Adventure</button>
+        <button class="filter-btn" data-filter="outstation">Outstation Tours</button>
+      </div>
+
+      <!-- Packages Grid -->
+      <div class="packages-grid reveal">
+        
+        <!-- Package 1: Araku Valley -->
+        <div class="package-card" data-category="hills">
+          <div class="package-img-container">
+            <span class="package-tag">Araku Hills</span>
+            <img src="assets/pkg-araku.jpg" alt="Misty Hills of Araku Valley" class="package-img" loading="lazy">
+            <div class="package-price"><span class="original-price">₹7,499</span>₹4,999 <span>/ Person</span></div>
+          </div>
+          <div class="package-details">
+            <div class="package-meta">
+              <div class="package-meta-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                3 Days / 2 Nights
+              </div>
+              <div class="package-meta-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="feather feather-users"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                Group & Private
+              </div>
+            </div>
+            <h3>Araku Valley Hill Retreat</h3>
+            <p>Escape into the clouds. Visit Borra Caves, coffee plantations, Chaparai Waterfalls, and enjoy authentic local bamboo chicken.</p>
+            <div class="package-rating">
+              ★★★★★ <span>(4.9/5 Reviews)</span>
+            </div>
+            <a href="#booking" class="package-btn">Enquire Now</a>
+          </div>
+        </div>
+
+        <!-- Package 2: Vizag City Beach Tour -->
+        <div class="package-card" data-category="beaches">
+          <div class="package-img-container">
+            <span class="package-tag">Beaches</span>
+            <img src="assets/pkg-beaches.jpg" alt="RK Beach Visakhapatnam" class="package-img" loading="lazy">
+            <div class="package-price"><span class="original-price">₹4,999</span>₹2,999 <span>/ Person</span></div>
+          </div>
+          <div class="package-details">
+            <div class="package-meta">
+              <div class="package-meta-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                2 Days / 1 Night
+              </div>
+              <div class="package-meta-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="feather feather-users"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                Comfort Ride
+              </div>
+            </div>
+            <h3>Coastal City Explorer</h3>
+            <p>Explore RK Beach, Kailasagiri Ropeway, Submarine Museum, TU 142 Aircraft Museum, and Simhachalam hills.</p>
+            <div class="package-rating">
+              ★★★★★ <span>(4.8/5 Reviews)</span>
+            </div>
+            <a href="#booking" class="package-btn">Enquire Now</a>
+          </div>
+        </div>
+
+        <!-- Package 3: Simhachalam Spiritual Tour -->
+        <div class="package-card" data-category="spiritual">
+          <div class="package-img-container">
+            <span class="package-tag">Spiritual</span>
+            <img src="assets/pkg-temples.jpg" alt="Simhachalam Temple" class="package-img" loading="lazy">
+            <div class="package-price"><span class="original-price">₹2,999</span>₹1,799 <span>/ Person</span></div>
+          </div>
+          <div class="package-details">
+            <div class="package-meta">
+              <div class="package-meta-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                1 Day Tour
+              </div>
+              <div class="package-meta-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="feather feather-users"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                Family Special
+              </div>
+            </div>
+            <h3>Spiritual Temple Trail</h3>
+            <p>Seek blessings at Simhachalam Varaha Lakshmi Narasimha Temple, Kanaka Maha Lakshmi Temple, and Sri Sampath Vinayagar Temple.</p>
+            <div class="package-rating">
+              ★★★★★ <span>(4.9/5 Reviews)</span>
+            </div>
+            <a href="#booking" class="package-btn">Enquire Now</a>
+          </div>
+        </div>
+
+        <!-- Package 4: Rushikonda Beach Water Adventure -->
+        <div class="package-card" data-category="adventure">
+          <div class="package-img-container">
+            <span class="package-tag">Adventure</span>
+            <img src="assets/pkg-adventure.jpg" alt="Water sports at Rushikonda Beach" class="package-img" loading="lazy">
+            <div class="package-price"><span class="original-price">₹5,999</span>₹3,999 <span>/ Person</span></div>
+          </div>
+          <div class="package-details">
+            <div class="package-meta">
+              <div class="package-meta-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                2 Days / 1 Night
+              </div>
+              <div class="package-meta-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="feather feather-users"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                Gear Included
+              </div>
+            </div>
+            <h3>Rushikonda Beach Surf & Splash</h3>
+            <p>Get your adrenaline pumping. Enjoy speedboating, jet-skiing, paramotoring, and surf lessons at the Blue Flag Rushikonda beach.</p>
+            <div class="package-rating">
+              ★★★★★ <span>(4.7/5 Reviews)</span>
+            </div>
+            <a href="#booking" class="package-btn">Enquire Now</a>
+          </div>
+        </div>
+
+        <!-- Package 5: Yarada Beach Escape -->
+        <div class="package-card" data-category="beaches">
+          <div class="package-img-container">
+            <span class="package-tag">Beaches</span>
+            <img src="assets/pkg-yarada.jpg" alt="Yarada Beach hills and sea" class="package-img" loading="lazy">
+            <div class="package-price"><span class="original-price">₹3,499</span>₹1,999 <span>/ Person</span></div>
+          </div>
+          <div class="package-details">
+            <div class="package-meta">
+              <div class="package-meta-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                1 Day Getaway
+              </div>
+              <div class="package-meta-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="feather feather-users"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                Couples & Friends
+              </div>
+            </div>
+            <h3>Yarada Beach & Dolphin's Nose</h3>
+            <p>Witness a dramatic coastline. Visit the iconic Dolphin's Nose Lighthouse, Yarada's private beach cove, and enjoy sea view dining.</p>
+            <div class="package-rating">
+              ★★★★★ <span>(4.8/5 Reviews)</span>
+            </div>
+            <a href="#booking" class="package-btn">Enquire Now</a>
+          </div>
+        </div>
+
+        <!-- Package 6: Araku & Borra Caves Heritage -->
+        <div class="package-card" data-category="hills">
+          <div class="package-img-container">
+            <span class="package-tag">Araku Hills</span>
+            <img src="assets/pkg-borra.jpg" alt="Borra Caves stalactites" class="package-img" loading="lazy">
+            <div class="package-price"><span class="original-price">₹9,999</span>₹5,999 <span>/ Person</span></div>
+          </div>
+          <div class="package-details">
+            <div class="package-meta">
+              <div class="package-meta-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                3 Days / 2 Nights
+              </div>
+              <div class="package-meta-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="feather feather-users"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                Premium Stay
+              </div>
+            </div>
+            <h3>Araku & Borra Caves Heritage Journey</h3>
+            <p>Explore million-year-old stalactites in Borra Caves, stay at premium eco-resorts, visit the tribal museum, and enjoy tribal dance shows.</p>
+            <div class="package-rating">
+              ★★★★★ <span>(4.9/5 Reviews)</span>
+            </div>
+            <a href="#booking" class="package-btn">Enquire Now</a>
+          </div>
+        </div>
+
+        <!-- Package 7: Tirupati Venkateswara Temple Outstation -->
+        <div class="package-card" data-category="outstation">
+          <div class="package-img-container">
+            <span class="package-tag">State Tour</span>
+            <img src="assets/pkg-tirupati.jpg" alt="Tirupati Temple Golden Dome" class="package-img" loading="lazy">
+            <div class="package-price"><span class="original-price">₹7,999</span>₹4,999 <span>/ Person</span></div>
+          </div>
+          <div class="package-details">
+            <div class="package-meta">
+              <div class="package-meta-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                2 Days / 1 Night
+              </div>
+              <div class="package-meta-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="feather feather-users"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                VIP Darshan Options
+              </div>
+            </div>
+            <h3>Tirupati Divine Darshan</h3>
+            <p>Experience the sacred journey. Seek blessings of Lord Venkateswara Swamy, visit Tiruchanur and Kalahasti temples.</p>
+            <div class="package-rating">
+              ★★★★★ <span>(4.9/5 Reviews)</span>
+            </div>
+            <a href="#booking" class="package-btn">Enquire Now</a>
+          </div>
+        </div>
+
+        <!-- Package 8: Hyderabad City Tour -->
+        <div class="package-card" data-category="outstation">
+          <div class="package-img-container">
+            <span class="package-tag">City Tour</span>
+            <img src="assets/pkg-hyderabad.jpg" alt="Charminar Monument Hyderabad" class="package-img" loading="lazy">
+            <div class="package-price"><span class="original-price">₹11,999</span>₹7,499 <span>/ Person</span></div>
+          </div>
+          <div class="package-details">
+            <div class="package-meta">
+              <div class="package-meta-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                4 Days / 3 Nights
+              </div>
+              <div class="package-meta-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="feather feather-users"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                Guided History Tour
+              </div>
+            </div>
+            <h3>Hyderabad Heritage Explorer</h3>
+            <p>Explore the pearl city. Visit the historic Charminar, majestic Golconda Fort, Ramoji Film City, and enjoy famous Hyderabadi Biryani.</p>
+            <div class="package-rating">
+              ★★★★★ <span>(4.8/5 Reviews)</span>
+            </div>
+            <a href="#booking" class="package-btn">Enquire Now</a>
+          </div>
+        </div>
+
+        <!-- Package 9: Kerala Backwaters & Hills -->
+        <div class="package-card" data-category="outstation">
+          <div class="package-img-container">
+            <span class="package-tag">Interstate Tour</span>
+            <img src="assets/pkg-kerala.jpg" alt="Kerala Houseboat Backwaters" class="package-img" loading="lazy">
+            <div class="package-price"><span class="original-price">₹16,999</span>₹10,999 <span>/ Person</span></div>
+          </div>
+          <div class="package-details">
+            <div class="package-meta">
+              <div class="package-meta-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                5 Days / 4 Nights
+              </div>
+              <div class="package-meta-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="feather feather-users"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                Houseboat Stay Include
+              </div>
+            </div>
+            <h3>Kerala Backwaters & Munnar Hills</h3>
+            <p>Discover God's Own Country. Stay in an Alleppey houseboat, walk through Munnar tea gardens, and see the Chinese fishing nets in Kochi.</p>
+            <div class="package-rating">
+              ★★★★★ <span>(4.9/5 Reviews)</span>
+            </div>
+            <a href="#booking" class="package-btn">Enquire Now</a>
+          </div>
+        </div>
+
+        <!-- Package 10: Ooty Queen of Hill Stations -->
+        <div class="package-card" data-category="outstation">
+          <div class="package-img-container">
+            <span class="package-tag">Interstate Tour</span>
+            <img src="assets/pkg-ooty.jpg" alt="Ooty Tea Estates" class="package-img" loading="lazy">
+            <div class="package-price"><span class="original-price">₹13,999</span>₹8,499 <span>/ Person</span></div>
+          </div>
+          <div class="package-details">
+            <div class="package-meta">
+              <div class="package-meta-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                4 Days / 3 Nights
+              </div>
+              <div class="package-meta-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="feather feather-users"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                Nilgiri Train Ride
+              </div>
+            </div>
+            <h3>Ooty Queen of Hills Retreat</h3>
+            <p>Explore the stunning Nilgiri hills. Ride the UNESCO heritage toy train, boat on Ooty lake, and explore the rose gardens and tea factories.</p>
+            <div class="package-rating">
+              ★★★★★ <span>(4.8/5 Reviews)</span>
+            </div>
+            <a href="#booking" class="package-btn">Enquire Now</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Fleet Transport Section -->
+  <section class="fleet section-padding" id="fleet">
+    <div class="container">
+      <div class="section-title-wrap text-center reveal">
+        <span class="sub-title">Our Premium Fleet</span>
+        <h2 class="section-title">Travel in Comfort and Style</h2>
+        <p style="margin-top: 1rem;">We offer a diverse range of vehicles to accommodate solo travelers, families, and large tour groups.</p>
+      </div>
+
+      <div class="fleet-grid reveal">
+        <!-- Vehicle 1: Sedan -->
+        <div class="fleet-card">
+          <div class="fleet-img-wrap">
+            <img src="assets/fleet-sedan.jpg" alt="Premium Sedan Car" class="fleet-img" loading="lazy">
+            <span class="fleet-tag">Self-Drive or Chauffeur</span>
+          </div>
+          <div class="fleet-details">
+            <h3>Premium Sedan</h3>
+            <p>Ideal for solo business trips, couples, or small families looking for a smooth coastal drive.</p>
+            <ul class="fleet-specs">
+              <li>Seats: 4 + 1</li>
+              <li>Luggage: 2 Large Bags</li>
+              <li>AC: Dual Zone Control</li>
+            </ul>
+            <div class="fleet-price">₹2,499 <span>/ Day</span></div>
+            <a href="#booking" class="fleet-btn">Book Ride</a>
+          </div>
+        </div>
+
+        <!-- Vehicle 2: SUV Van -->
+        <div class="fleet-card">
+          <div class="fleet-img-wrap">
+            <img src="assets/fleet-suv.jpg" alt="Premium SUV Van" class="fleet-img" loading="lazy">
+            <span class="fleet-tag">Best Seller</span>
+          </div>
+          <div class="fleet-details">
+            <h3>Spacious Travel SUV</h3>
+            <p>Perfect for family getaways to Araku Valley. Extra legroom and powerful hill-climbing drive.</p>
+            <ul class="fleet-specs">
+              <li>Seats: 6 + 1</li>
+              <li>Luggage: 4 Large Bags</li>
+              <li>AC: Rear Vents Control</li>
+            </ul>
+            <div class="fleet-price">₹3,999 <span>/ Day</span></div>
+            <a href="#booking" class="fleet-btn">Book Ride</a>
+          </div>
+        </div>
+
+        <!-- Vehicle 3: Caravan -->
+        <div class="fleet-card">
+          <div class="fleet-img-wrap">
+            <img src="assets/fleet-caravan.jpg" alt="Luxury Caravan" class="fleet-img" loading="lazy">
+            <span class="fleet-tag">Luxury Living</span>
+          </div>
+          <div class="fleet-details">
+            <h3>Luxury Camper Caravan</h3>
+            <p>Experience the ultimate road trip. Sleep, cook, and relax on the cliffs of Yarada beach.</p>
+            <ul class="fleet-specs">
+              <li>Seats: 4 Sleep / 6 Seat</li>
+              <li>Luggage: Massive Trunk</li>
+              <li>AC: Fully Integrated Cabin</li>
+            </ul>
+            <div class="fleet-price">₹9,999 <span>/ Day</span></div>
+            <a href="#booking" class="fleet-btn">Book Ride</a>
+          </div>
+        </div>
+
+        <!-- Vehicle 4: Tour Bus -->
+        <div class="fleet-card">
+          <div class="fleet-img-wrap">
+            <img src="assets/fleet-bus.jpg" alt="Luxury Tour Bus" class="fleet-img" loading="lazy">
+            <span class="fleet-tag">Group Special</span>
+          </div>
+          <div class="fleet-details">
+            <h3>Luxury Sightseeing Coach</h3>
+            <p>Premium air-conditioned buses with pushback seats for large families, weddings, or corporate groups.</p>
+            <ul class="fleet-specs">
+              <li>Seats: 25 - 40</li>
+              <li>Luggage: Under-Coach Bays</li>
+              <li>AC: Central High Capacity</li>
+            </ul>
+            <div class="fleet-price">₹14,999 <span>/ Day</span></div>
+            <a href="#booking" class="fleet-btn">Book Ride</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Photo Gallery Section -->
+  <section class="gallery section-padding" id="gallery">
+    <div class="container">
+      <div class="section-title-wrap text-center reveal">
+        <span class="sub-title">Moments</span>
+        <h2 class="section-title">Snapshots of Visakhapatnam</h2>
+      </div>
+
+      <div class="gallery-grid scale-up">
+        <!-- Item 1 -->
+        <div class="gallery-item">
+          <img src="assets/gal-rk.jpg" alt="Sunrise at RK Beach" loading="lazy">
+          <div class="gallery-overlay">
+            <h4>RK Beach Sunrise</h4>
+            <p>Coastal Vibe</p>
+          </div>
+        </div>
+        <!-- Item 2 (Wide) -->
+        <div class="gallery-item">
+          <img src="assets/gal-borra.jpg" alt="Inside Borra Caves" loading="lazy">
+          <div class="gallery-overlay">
+            <h4>Stalactites of Borra Caves</h4>
+            <p>Millennium Heritage</p>
+          </div>
+        </div>
+        <!-- Item 3 -->
+        <div class="gallery-item">
+          <img src="assets/gal-simha.jpg" alt="Simhachalam Temple Complex" loading="lazy">
+          <div class="gallery-overlay">
+            <h4>Simhachalam Temple</h4>
+            <p>Spiritual Echoes</p>
+          </div>
+        </div>
+        <!-- Item 4 -->
+        <div class="gallery-item">
+          <img src="assets/gal-rushi.jpg" alt="Surfing at Rushikonda Beach" loading="lazy">
+          <div class="gallery-overlay">
+            <h4>Rushikonda Beach</h4>
+            <p>Water Sports Haven</p>
+          </div>
+        </div>
+        <!-- Item 5 -->
+        <div class="gallery-item">
+          <img src="assets/gal-dolphin.jpg" alt="Dolphin's Nose Light House" loading="lazy">
+          <div class="gallery-overlay">
+            <h4>Dolphin's Nose</h4>
+            <p>Coastal Watch</p>
+          </div>
+        </div>
+        <!-- Item 6 -->
+        <div class="gallery-item">
+          <img src="assets/gal-araku.jpg" alt="Araku Valley Coffee Garden" loading="lazy">
+          <div class="gallery-overlay">
+            <h4>Araku Coffee Plantations</h4>
+            <p>Valley Retreat</p>
+          </div>
+        </div>
+        <!-- Item 7 (Wide) -->
+        <div class="gallery-item">
+          <img src="assets/gal-vuda.jpg" alt="Scenic VUDA Park Overlooking Coast" loading="lazy">
+          <div class="gallery-overlay">
+            <h4>VUDA Park Sea View</h4>
+            <p>Green & Blue</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cinematic Travel Reel (Animated Video Simulator) -->
+  <section class="video-section section-padding" id="cinematic-reel">
+    <div class="container">
+      <div class="section-title-wrap text-center reveal">
+        <span class="sub-title">Cinematic Preview</span>
+        <h2 class="section-title">Experience Vizag in Motion</h2>
+        <p style="margin-top: 1rem;">Take a virtual drive along our beautiful coastal roads and look through the scenic vistas of Araku Valley.</p>
+      </div>
+
+      <div class="video-player-container scale-up">
+        <div class="video-player">
+          <div class="video-canvas" id="videoCanvas">
+            <!-- Simulated video frames -->
+            <div class="video-frame active" style="background-image: url('assets/hero-2.jpg');">
+              <div class="video-caption">Drive along Ramakrishna Beach Road</div>
+            </div>
+            <div class="video-frame" style="background-image: url('assets/hero-1.jpg');">
+              <div class="video-caption">Winding roads through misty Araku Hills</div>
+            </div>
+            <div class="video-frame" style="background-image: url('assets/about.jpg');">
+              <div class="video-caption">Ocean views at INS Kursura Submarine Museum</div>
+            </div>
+            <div class="video-frame" style="background-image: url('assets/pkg-yarada.jpg');">
+              <div class="video-caption">Coastal cliffs at Yarada Beach & Dolphin's Nose</div>
+            </div>
+            <div class="video-frame" style="background-image: url('assets/pkg-borra.jpg');">
+              <div class="video-caption">Exploring the giant chambers of Borra Caves</div>
+            </div>
+          </div>
+          
+          <!-- Video overlay with play button -->
+          <div class="video-player-overlay" id="videoPlayerOverlay">
+            <button class="video-play-btn" id="videoPlayBtn" aria-label="Play Cinematic Video">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-play"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            </button>
+            <span class="play-label">Click to Play Cinematic Reel</span>
+          </div>
+
+          <!-- Video controls -->
+          <div class="video-controls-bar">
+            <button class="control-btn" id="controlPlayPause" aria-label="Pause Video">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-pause" id="pauseIcon"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-play" id="playIcon" style="display: none;"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            </button>
+            
+            <div class="video-timeline">
+              <div class="video-timeline-progress" id="videoProgress"></div>
+            </div>
+
+            <div class="video-time-display">
+              <span id="videoCurrentTime">00:00</span> / <span id="videoDuration">00:15</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Testimonials Slider -->
+  <section class="testimonials section-padding" id="testimonials">
+    <div class="container">
+      <div class="section-title-wrap text-center reveal">
+        <span class="sub-title" style="color: var(--secondary);">Testimonials</span>
+        <h2 class="section-title">What Our Guests Say</h2>
+      </div>
+
+      <div class="testimonials-slider reveal">
+        <!-- Slide 1 -->
+        <div class="testimonial-slide active">
+          <p class="testimonial-quote">"Our trip to Araku was phenomenal! Vizag Travels handled everything flawlessly from the pickup, the resorts, to the caves. Mukesh himself checked in on us to ensure we had the best experience. Highly recommended!"</p>
+          <div class="testimonial-author">
+            <div class="author-img" style="background: var(--secondary-glow); display: flex; align-items: center; justify-content: center; width: 60px; height: 60px; border-radius: 50%; color: var(--secondary); font-weight: 700;">RK</div>
+            <div class="author-details">
+              <h4>Rajesh Kumar</h4>
+              <p>Hyderabad, India</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="testimonial-slide">
+          <p class="testimonial-quote">"Yarada Beach and the Submarine Museum were outstanding. The drivers are professional, polite, and know the best local spots to eat. Booking with Mukesh's team was the best decision we made."</p>
+          <div class="testimonial-author">
+            <div class="author-img" style="background: var(--secondary-glow); display: flex; align-items: center; justify-content: center; width: 60px; height: 60px; border-radius: 50%; color: var(--secondary); font-weight: 700;">SS</div>
+            <div class="author-details">
+              <h4>Sneha Sharma</h4>
+              <p>Bangalore, India</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="testimonial-slide">
+          <p class="testimonial-quote">"Highly professional, customized tour packages. We did a 4-day temple and coastal tour. Excellent service, clean cars, and budget-friendly. Rapeti Matshya Mukesh runs a very reliable service!"</p>
+          <div class="testimonial-author">
+            <div class="author-img" style="background: var(--secondary-glow); display: flex; align-items: center; justify-content: center; width: 60px; height: 60px; border-radius: 50%; color: var(--secondary); font-weight: 700;">AP</div>
+            <div class="author-details">
+              <h4>Dr. Amit Patel</h4>
+              <p>Mumbai, India</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <div class="slider-controls reveal">
+        <button class="slider-btn prev" aria-label="Previous Testimonial">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        </button>
+        <button class="slider-btn next" aria-label="Next Testimonial">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Inquiry Booking Form -->
+  <section class="booking-section section-padding" id="booking">
+    <div class="container">
+      <div class="booking-box reveal">
+        <div class="booking-box-grid">
+          
+          <!-- Booking Form Column -->
+          <div class="booking-form-col">
+            <div class="section-title-wrap">
+              <span class="sub-title">Book Your Journey</span>
+              <h2 class="section-title">Send An Inquiry</h2>
+              <p style="margin-top: 1rem; color: var(--text-muted);">Fill in the details below to submit your tour request directly to our team via WhatsApp.</p>
+            </div>
+
+            <form class="booking-form" id="bookingForm">
+              <div class="form-group">
+                <label for="userName">Full Name</label>
+                <input type="text" id="userName" placeholder="Your Name" required>
+              </div>
+
+              <div class="form-group">
+                <label for="userEmail">Email Address</label>
+                <input type="email" id="userEmail" placeholder="yourname@email.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="userPhone">Phone / WhatsApp</label>
+                <input type="tel" id="userPhone" placeholder="+91 XXXXX XXXXX" required>
+              </div>
+
+              <div class="form-group">
+                <label for="travelPackage">Select Package</label>
+                <select id="travelPackage" required>
+                  <option value="">Choose your journey...</option>
+                  <option value="Araku Valley Hill Retreat">Araku Valley Hill Retreat</option>
+                  <option value="Coastal City Explorer">Coastal City Explorer</option>
+                  <option value="Spiritual Temple Trail">Spiritual Temple Trail</option>
+                  <option value="Rushikonda Surf & Splash">Rushikonda Surf & Splash</option>
+                  <option value="Yarada & Dolphin's Nose">Yarada & Dolphin's Nose</option>
+                  <option value="Araku & Borra Caves Heritage">Araku & Borra Caves Heritage</option>
+                  <option value="Tirupati Divine Darshan">Tirupati Divine Darshan (State Tour)</option>
+                  <option value="Hyderabad Heritage Explorer">Hyderabad Heritage Explorer (Telangana)</option>
+                  <option value="Kerala Backwaters & Munnar Hills">Kerala Backwaters & Munnar (Kerala)</option>
+                  <option value="Ooty Queen of Hills Retreat">Ooty Queen of Hills Retreat (Ooty)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="travelDate">Preferred Travel Date</label>
+                <input type="date" id="travelDate" required>
+              </div>
+
+              <div class="form-group">
+                <label for="travelGuests">Number of Guests</label>
+                <input type="number" id="travelGuests" min="1" max="50" placeholder="1" required>
+              </div>
+
+              <div class="form-group full-width">
+                <label for="userAddress">Residential Address</label>
+                <input type="text" id="userAddress" placeholder="Your City, State, Country" required>
+              </div>
+
+              <div class="form-group full-width">
+                <label for="userMessage">Additional Custom Requests</label>
+                <textarea id="userMessage" rows="3" placeholder="Mention special needs, hotel levels, or custom routes..."></textarea>
+              </div>
+
+              <div class="form-group full-width">
+                <button type="submit" class="submit-btn">
+                  Send Booking Inquiry on WhatsApp
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="feather feather-send"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <!-- Contact Map Column -->
+          <div class="booking-map-col">
+            <div class="contact-details-card">
+              <h3>Our Head Office</h3>
+              <ul class="contact-info-list" style="margin-top: 1.5rem; list-style: none;">
+                <li style="display: flex; gap: 0.8rem; margin-bottom: 1.5rem; align-items: flex-start;">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="feather feather-map-pin" style="color: var(--secondary); margin-top: 0.2rem; flex-shrink: 0;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                  <div>
+                    <strong style="color: var(--primary);">Office Address:</strong><br>
+                    <span style="color: var(--text-muted); font-size: 0.95rem;">Maharani Street, Marripalem,<br>Visakhapatnam, Andhra Pradesh,<br>India - 530018</span>
+                  </div>
+                </li>
+                <li style="display: flex; gap: 0.8rem; margin-bottom: 1.5rem; align-items: flex-start;">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="feather feather-phone" style="color: var(--secondary); flex-shrink: 0;"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                  <div>
+                    <strong style="color: var(--primary);">Phone & WhatsApp:</strong><br>
+                    <a href="tel:9398149818" style="color: var(--secondary); font-weight: 600; text-decoration: none;">+91 93981 49818</a>
+                  </div>
+                </li>
+                <li style="display: flex; gap: 0.8rem; align-items: flex-start;">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="feather feather-mail" style="color: var(--secondary); flex-shrink: 0;"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                  <div>
+                    <strong style="color: var(--primary);">Email Support:</strong><br>
+                    <a href="mailto:info@vizagtravels.com" style="color: var(--secondary); font-weight: 600; text-decoration: none;">info@vizagtravels.com</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Google Map Embed Iframe -->
+            <div class="map-container" style="margin-top: 1.5rem; overflow: hidden; border-radius: var(--border-radius-md); box-shadow: var(--shadow-sm); border: 1px solid rgba(10, 25, 47, 0.05);">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3799.851216503831!2d83.25555555555556!3d17.74444444444444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a39158ff89c02ff%3A0xe104cf6a0ff462e!2sMarripalem%2C%20Visakhapatnam%2C%20Andhra%20Pradesh!5e0!3m2!1sen!2sin!4v1718228300000!5m2!1sen!2sin" width="100%" height="280" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Vizag Travels Office Location Map"></iframe>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Success Modal -->
+  <div class="modal-overlay" id="successModal">
+    <div class="success-modal">
+      <div class="success-icon">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check"><polyline points="20 6 9 17 4 12"></polyline></svg>
+      </div>
+      <h3>Inquiry Received!</h3>
+      <p>Thank you for choosing Vizag Travels. A personalized travel itinerary is being prepared. Founder Mukesh's team will contact you shortly.</p>
+      <button class="modal-close-btn" id="closeModalBtn">Proceed</button>
+    </div>
+  </div>
+
+  <!-- Gallery Lightbox Overlay -->
+  <div class="lightbox">
+    <span class="lightbox-close">&times;</span>
+    <img src="" alt="Lightbox Preview" class="lightbox-img">
+  </div>
+
+  <!-- Footer & Contact Details -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <h2>Vizag<span>Travels</span></h2>
+        <p>Your companion to exploring the breathtaking coastlines, majestic valleys, and rich heritage of Visakhapatnam.</p>
+        <div class="footer-socials">
+          <a href="#" class="social-icon" aria-label="Facebook">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="feather feather-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+          </a>
+          <a href="#" class="social-icon" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="feather feather-instagram"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line></svg>
+          </a>
+          <a href="#" class="social-icon" aria-label="Twitter">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="feather feather-twitter"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#packages">Tour Packages</a></li>
+          <li><a href="#gallery">Photo Gallery</a></li>
+          <li><a href="#testimonials">Guest Reviews</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Tour Packages</h3>
+        <ul class="footer-links">
+          <li><a href="#packages">Araku Valley Escape</a></li>
+          <li><a href="#packages">Coastal Beaches Tour</a></li>
+          <li><a href="#packages">Simhachalam Divine</a></li>
+          <li><a href="#packages">Water Sports Package</a></li>
+          <li><a href="#packages">Dolphin's Nose Light Tour</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Contact Info</h3>
+        <ul class="contact-info-list">
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <span>Maharani Street, Marripalem, Visakhapatnam, Andhra Pradesh, India - 530018</span>
+          </li>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="feather feather-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <span><a href="tel:9398149818" style="color: inherit;">+91 93981 49818</a></span>
+          </li>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            <span><a href="mailto:info@vizagtravels.com" style="color: inherit;">info@vizagtravels.com</a></span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container copyright">
+      <p>&copy; 2026 Vizag Travels. All rights reserved.</p>
+      <p>Owner & Founder: <strong>Rapeti Matshya Mukesh</strong> | Developed with ♥</p>
+    </div>
+  </footer>
+
+  <!-- Script File -->
+  <script src="main.js"></script>
+</body>
+</html>
